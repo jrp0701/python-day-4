@@ -3,10 +3,10 @@ gradebook = {
     "Stacy" : "D",
     "Oswald" : "C"
 }
-def main():
-    answer = input("Who's grade would you like to see? ")
-    grade = gradebook.get(answer)
-    print(grade)
+grade = input("What is your name? ")
 
-main()
-    
+if gradebook.get(grade):
+    print(grade, "got a", gradebook.get(grade))
+
+else:
+    print("Student not found.")
